@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* 
+  font-family: "Barlow", sans-serif; 400
+  font-family: "Barlow Condensed", sans-serif; 400, 700
+*/
+/* PRIMARY */
+/* NEUTRAL */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:-moz-any-link {
+  text-decoration: none;
+}
+
+a,
+a:any-link {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  padding: 5vh 5vw;
+  justify-content: space-between;
+  font-family: "Barlow Condensed", sans-serif;
+  position: relative;
+}
+
+.background {
+  background-color: hsl(207, 33%, 95%);
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -99999;
+  border-bottom-left-radius: 50px;
+}
+
+.desktop-nav,
+.close-menu {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  width: 90vw;
+  position: absolute;
+  top: 100%;
+  padding: 5vh 0;
+  border-radius: 5px;
+  box-shadow: 0px 6px 19px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 6px 19px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 19px -4px rgba(0, 0, 0, 0.75);
+}
+.mobile-nav hr {
+  border: 1px solid hsl(231, 7%, 65%);
+  width: 90%;
+}
+.mobile-nav a {
+  color: hsl(230, 29%, 20%);
+  font-weight: 700;
+}
+.mobile-nav a:hover {
+  text-decoration: underline;
+}
+.mobile-nav .login {
+  margin-top: 10px;
+  color: hsl(231, 7%, 65%);
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+    gap: 30px;
+  }
+  .desktop-nav a {
+    color: hsl(230, 29%, 20%);
+    font-weight: 700;
+  }
+  .desktop-nav a:hover {
+    text-decoration: underline;
+  }
+  .desktop-nav .login {
+    margin-left: 25px;
+    color: hsl(231, 7%, 65%);
+  }
+  .mobile-nav, .menu-div {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
