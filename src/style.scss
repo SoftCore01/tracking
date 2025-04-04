@@ -47,7 +47,7 @@ header {
 
 .background {
     background-color: $Light-Grayish-Blue;
-    height: 50%;
+    height: 60%;
     width: 50%;
     position: absolute;
     top: 0;
@@ -91,6 +91,69 @@ header {
         color: $Grayish-Blue;
     }
 }
+
+.img-container {
+    overflow: hidden;
+    img {
+        max-width: unset;
+        float: right;
+        width: 140%;
+        margin-right: -38%;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-bottom: 50px;
+}
+
+.info {
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Barlow Condensed", sans-serif;
+
+    div {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+.pro {
+    color: $Grayish-Blue;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: $Very-Dark-Blue;
+}
+
+p {
+    color: $Dark-Grayish-Blue;
+}
+
+span {
+    background-color: $Very-Dark-Blue;
+    padding: 2px 10px;
+    border-radius: 15px;
+    color: white;
+    margin-right: 10px;
+}
+
+button {
+    background-color: $Red;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    font-family: "Barlow", sans-serif;
+}
+
 
 @media screen and (min-width: 768px) {
     .desktop-nav {
