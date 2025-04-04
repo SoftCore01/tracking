@@ -144,11 +144,18 @@ button {
   border-radius: 5px;
   color: white;
   border: none;
+  font-weight: 600;
   padding: 10px 12px;
   font-family: "Barlow", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
+  html {
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
   .desktop-nav {
     display: flex;
     gap: 30px;
@@ -166,5 +173,15 @@ button {
   }
   .mobile-nav, .menu-div {
     display: none;
+  }
+  main {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .img-container img {
+    max-width: unset;
+    float: right;
+    width: 145%;
+    margin-right: -40%;
   }
 }/*# sourceMappingURL=style.css.map */
